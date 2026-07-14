@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* =========================
+   Reset
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* =========================
+   Theme
+========================= */
+
+[data-theme="light"] {
+  --background: #dee2e6;
+  --surface: #f5f6f8;
+  --surface-secondary: #c9ced4;
+  --primary: #5662f6;
+  --accent: #5662f6;
+  --text: #181a1d;
+  --text-secondary: #61666e;
+  --text-muted: #727780;
+  --text-inverse: #ffffff;
+  --border-color: rgba(255,255,255,.45);
+  --glass: rgba(199,204,211,.65);
+  --glass-border: rgba(255,255,255,.35);
+}
+
+[data-theme="dark"] {
+  --background: #15181d;
+  --surface: #272c33;
+  --surface-secondary: #313740;
+  --primary: #5662f6;
+  --accent: #6973ff;
+  --text: #ffffff;
+  --text-secondary: #a8afb8;
+  --text-muted: #8a919b;
+  --text-inverse: #181a1d;
+  --border-color: rgba(255,255,255,.08);
+  --glass: rgba(39,44,51,.65);
+  --glass-border: rgba(255,255,255,.08);
+}
+
+/* =========================
+   Layout
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 32px;
+  }
+}
