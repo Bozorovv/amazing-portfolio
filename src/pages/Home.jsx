@@ -1,3 +1,4 @@
+import Playground from "../Playground/Playground";
 import About from "../sections/Hero/About/About";
 import Hero from "../sections/Hero/Hero";
 import Projects from "../sections/Projects/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
     <Projects />
     <Skills />
     <About />
+    <Playground />
     </>
   );
 }

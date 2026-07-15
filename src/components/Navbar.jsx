@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { Folder, FileText, Briefcase, User, Globe, Moon, Sun, Terminal, Menu, X } from "lucide-react";
+import { Folder, FileText, Briefcase, User, Globe, Moon, Sun, Terminal, Menu, X, Gamepad } from "lucide-react";
 
 // Ikonkalar har xil rangda (xuddi VS Code'dagi Material Icon Theme kabi)
 const navigation = [
   { label: "Home", href: "#hero", icon: <FileText size={13} className="text-sky-400" /> },
   { label: "Projects", href: "#projects", icon: <Folder size={13} className="text-amber-400" /> },
-  { label: "Experience", href: "#experience", icon: <Briefcase size={13} className="text-purple-400" /> },
+  { label: "Experience", href: "#skills", icon: <Briefcase size={13} className="text-purple-400" /> },
   { label: "About", href: "#about", icon: <User size={13} className="text-emerald-400" /> },
+  { label: "Playground", href: "#playground", icon: <Gamepad size={13} className="text-emerald-400" /> },
 ];
 
 export default function Navbar() {
@@ -77,7 +78,7 @@ export default function Navbar() {
             </button>
 
             <a
-              href="#contact"
+              href="#footer"
               className="
                 hidden
                 md:inline-flex

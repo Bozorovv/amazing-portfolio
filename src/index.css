@@ -127,6 +127,16 @@ p {
   padding-inline: 24px;
 }
 
+/* index.css yoki styles.css */
+@layer utilities {
+  .premium-hover {
+    @apply transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] 
+           hover:-translate-y-[2px] 
+           hover:border-white/[0.15] 
+           hover:shadow-[0_10px_30px_rgba(0,0,0,0.4)];
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     padding-inline: 32px;
