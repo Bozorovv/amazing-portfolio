@@ -15,7 +15,7 @@ export default function HeroContent() {
     <div className="max-w-[560px] space-y-8">
       {/* Heading */}
       <div>
-        <h1 className="text-[88px] font-black uppercase leading-[0.88] tracking-[-0.07em] text-text lg:text-[108px]">
+        <h1 className="text-[88px] font-black uppercase leading-[0.88] tracking-[-0.07em] text-amber-600 lg:text-[108px]">
           FRONTEND
         </h1>
         <h2
